@@ -1,6 +1,7 @@
 import React from 'react';
 
-export const MenuBar = () => {
+export class MenuBar extends React Component {
+  render() {
   return (
     <div className="header-container">
       <div className="header-top">
@@ -40,3 +41,4 @@ export const MenuBar = () => {
       </div>
   );
 } 
+}  

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div id="navbar">
+  <div class="nav-item">
+    <a class="nav-link" href="#about-me">About me</a>
+  </div>
+  <div class="nav-item">
+    <a class="nav-link" href="#projects">My work</a>
+  </div>
+  <div class="nav-item">
+    <a class="nav-link" href="#contact">Contact</a>
+  </div>
+  <div class="nav-item">
+    <a class="nav-link" href="https://codepen.io/jarteaga127/full/yLJZpBX">日本語</a>
+  </div>
+</div>
+<section id="welcome-section">
+  <h1>Hello, I am Joe Arteaga</h1>
+  <p>I am aspiring to become a web designer in Japan</p>
+</section>
+<!--end of section-->
+<section id="about-me">
+  <div id="about-me-img">
+    <img src="" alt="Picture of Joseph Arteaga">
+  </div>
+  <div id="about-me-text">
+  <h2 id="about-me-title">About me</h2>
+  <p>I am an American living in Japan since 2016. Despite most of my work experience being in English education, I have a desire to pursue a career in web design. I enjoy problem solving as well as the web design process, such as coding and drawing out the framework for the websites and apps. </p>
+  </div>
+</section>
+<!--end of about me-->
+<div id="project-title">
+<h2>My Work</h2>
+</div>
+<article id="main-project">
+  <a href="#"><h2>My Main Project</h2><img src="" id="main-pro-img">
+    <p>Coming Soon</p>
+  </a>
+  <button class="project-btn">click here</button>
+  </article>
+<section id="projects">
+  <div class="project-tile">
+    <a href="#"><h2>Project 1</a></h2>
+  <a href="#"><img src="">
+    <p>Coming Soon</p>
+  </a>
+  <button class="project-btn">click here</button>
+  </div>
+  <div class="project-tile">
+    <h2><a href="#">Project 2</h2>
+  <img src="" class="project-img">
+    <p>Coming Soon</p>
+  </a>
+  <button class="project-btn">click here</button>
+  </div>
+  <div class="project-tile">
+    <a href="#"><h2>Project 3</h2>
+  <img src="" class="project-img">
+    <p>Coming Soon</p>
+  </a>
+  <button class="project-btn">click here</button>
+  </div>
+  <div class="project-tile">
+    <a href="https://codepen.io/jarteaga127/full/PoGepKm"><h2>YLIA Quote Generator (JPN) </h2>
+    <img src="" class="project-img">
+    <p>Your Lie in April Quote Generator (in Japanese, sorry.)</p>
+    </a>
+  <button class="project-btn">click here</button>
+  </div>
+</section>
+<!--end of my work -->
+<section id="contact">
+  <div id="contact-header">
+  <h2>Let's work together!</h2>
+  </div>
+  <div class="contact-links">
+    <a href="https://www.instagram.com/jarteaga127/" target="_blank" class="contact-btn"><img src="https://cdn4.iconfinder.com/data/icons/social-media-2146/512/25_social-256.png" class="contact-icon">Instagram</a>
+    <a href="" target="_blank" class="contact-btn"><img src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Facebook_colored_svg_copy-256.png" class="contact-icon">Facebook</a>
+    <a href="https://github.com/jarteaga127" target="_blank" class="contact-btn"><img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/github-256.png" class="contact-icon" id="profile-link"></i>GitHub</a>
+ <a href="" target="_blank" class="contact-btn"><img src="https://cdn2.iconfinder.com/data/icons/social-media-applications/64/social_media_applications_5-line-512.png" class="contact-icon">LINE</a> 
+    <a href="mailto:jarteaga127@gmail.com" target="_blank" class="contact-btn"><img src="https://cdn1.iconfinder.com/data/icons/office-171/32/office-02-256.png" class="contact-icon">e-mail</a>
+  </div>
+</section>
+<!--end of contact -->
+<footer>
+  <p>&copy; Created by Joseph Arteaga</p>
+</footer>
+</body>
+</html>

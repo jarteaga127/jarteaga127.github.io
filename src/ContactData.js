@@ -5,11 +5,6 @@ export const ContactData = [
     link: "https://www.instagram.com/jarteaga127/"
   },
   {
-    icon: <i class="fab fa-line"></i>,
-    label: "LINE",
-    link: ""
-  },
-  {
     icon: <i class="fab fa-facebook-square"></i>,
     label: "Facebook",
     link: "https://www.facebook.com/joseph.arteaga.98"

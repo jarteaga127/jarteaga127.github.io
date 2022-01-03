@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Righteous&family=Roboto&display=swap");
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css");
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f1f1f1;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+  text-align: center;
+  max-width: 1349px;
+}
+
+.navbar-001 {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: darkred;
+  z-index: 100;
+}
+
+.navbar-logo {
+  font-family: "Righteous";
+  color: white;
+  font-size: 24px;
+  padding: 8px 16px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 712px) {
+  .nav-links {
+    display: none;
+  }
+}
+
+.link-container {
+  padding: 8px 16px;
+}
+
+.link-container > a {
+  color: white;
+  text-decoration: none;
+}
+
+.link-container > a:hover {
+  color: #fff;
+  text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #00ffff, 0 0 2px #00ffff,
+    0 0 3px #00ffff;
+}
+
+.side-menu {
+  display: none;
+}
+
+.side-menu > button {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  background-color: transparent;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.side-menu > button:hover {
+  color: #fff;
+  text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #00ffff, 0 0 2px #00ffff,
+    0 0 3px #00ffff;
+}
+
+@media (max-width: 712px) {
+  .side-menu {
+    display: initial;
+    padding: 8px 16px;
+  }
+}
+
+.hero-sec {
+  margin-top: 60px;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  right: 0;
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.hero-wrapper {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-background > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-text {
+  color: white;
+  z-index: 10;
+}
+
+.hero-text > h1 {
+  font-family: "Righteous";
+  font-size: 64px;
+}
+
+.hero-text > h2 {
+  font-size: 32px;
+}
+
+@media (max-width: 712px) {
+  .hero-text {
+    color: white;
+    z-index: 10;
+  }
+
+  .hero-text > h1 {
+    font-size: 32px;
+  }
+
+  .hero-text > h2 {
+    font-size: 18px;
+    margin: 24px;
+  }
+}
+
+#AboutMe {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  width: 100%;
+  max-width: 1349px;
+  background-color: white;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 24px;
+}
+
+.about-me-002 {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.my-picture {
+  width: 450px;
+  height: 450px;
+  margin: 0 auto;
+}
+
+.my-picture > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-me-text {
+  width: 50%;
+  text-align: left;
+  margin: 0 32px;
+}
+
+@media (max-width: 712px) {
+  .section-title {
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .about-me-002 {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .about-me-text {
+    width: 90%;
+    margin: 8px auto;
+  }
+}
+
+#Skills {
+  padding-top: 60px;
+  width: 100%;
+  max-width: 1349px;
+}
+
+@media (max-width: 712px) {
+  #Skills {
+    margin: 0 auto;
+  }
+}
+
+.skill-grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-gap: 10px;
+  padding: 1rem;
+}
+
+.skillbar {
+  display: flex;
+  background-color: white;
+  padding: 10px 20px;
+  align-items: center;
+}
+
+.icon-container > i {
+  font-size: 24px;
+}
+
+.skill-name {
+  font-size: 18px;
+  margin-left: 8px;
+}
+
+#MyWork {
+  padding-top: 60px;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+  grid-gap: 1rem;
+}
+
+.project-thumb {
+  width: 100%;
+  max-width: 375px;
+  background-color: white;
+}
+
+.project-image {
+  width: 375px;
+}
+
+.project-image-002 > img {
+  width: 100%;
+}
+
+.project-image-002 > img:hover {
+  opacity: 0.6;
+  transition: 0.5s ease;
+}
+
+.project-name {
+  text-align: left;
+  font-weight: bold;
+  margin: 8px 16px;
+  color: black;
+  padding-top: 8px;
+  padding-bottom: 18px;
+}
+
+.project-name-002 {
+  color: black;
+  text-decoration: none;
+}
+
+.project-name-002:hover {
+  color: darkred;
+}
+
+.project-title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.project-subtitle {
+  font-size: 14px;
+}

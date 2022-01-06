@@ -308,3 +308,70 @@ body {
 .project-subtitle {
   font-size: 14px;
 }
+
+#Contact {
+  margin-top: 60px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #361717;
+  color: white;
+}
+
+.contact-header {
+  text-align: center;
+  font-size: 24px;
+}
+
+.contact-container {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 2rem;
+}
+
+.contact-button {
+  padding: 8px 16px;
+  font-size: 18px;
+  font-family: Roboto;
+  font-weight: bold;
+  background-color: transparent;
+  margin: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-button-2 {
+  display: flex;
+  color: white;
+  align-items: center;
+  text-decoration: none;
+}
+
+.contact-button-2:hover {
+  color: #fff;
+  text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #00ffff, 0 0 2px #00ffff,
+    0 0 3px #00ffff;
+}
+
+@media (max-width: 505px) {
+  .contact-button {
+    display: block;
+  }
+}
+
+.contact-icon {
+  font-size: 32px;
+}
+
+.contact-label {
+  margin-left: 8px;
+}
+
+.contact-end {
+  width: 100%;
+  border-top: solid 1px;
+  padding-top: 1rem;
+}

@@ -16,6 +16,12 @@ body {
   max-width: 1920px;
 }
 
+@media (max-width: 320px) {
+  body {
+    max-width: 320px;
+  }
+}
+
 .navbar-001 {
   top: 0;
   left: 0;
@@ -53,13 +59,14 @@ body {
 
 .link-container > a {
   color: white;
+  font-weight: bold;
   text-decoration: none;
 }
 
 .link-container > a:hover {
   color: #fff;
-  text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #00ffff, 0 0 2px #00ffff,
-    0 0 3px #00ffff;
+  font-weight: bold;
+  opacity: 0.5;
 }
 
 .side-menu {
@@ -78,8 +85,7 @@ body {
 
 .side-menu > button:hover {
   color: #fff;
-  text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #00ffff, 0 0 2px #00ffff,
-    0 0 3px #00ffff;
+  font-weight: bold;
 }
 
 @media (max-width: 712px) {
@@ -96,7 +102,7 @@ body {
   z-index: 1;
   top: 0;
   right: 0;
-  background-color: #262626;
+  background-color: rgba(0, 0, 0, 0.66);
   overflow-x: hidden;
   transition: 0.5s;
 }
@@ -112,12 +118,13 @@ body {
   font-size: 24px;
   border: none;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .close-side-menu > button:hover {
   color: #fff;
-  text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #00ffff, 0 0 2px #00ffff,
-    0 0 3px #00ffff;
+  font-weight: bold;
+  opacity: 0.5;
 }
 
 .side-link-container > a {
@@ -129,8 +136,8 @@ body {
 
 .side-link-container > a:hover {
   color: #fff;
-  text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #00ffff, 0 0 2px #00ffff,
-    0 0 3px #00ffff;
+  font-weight: bold;
+  opacity: 0.5;
 }
 
 .hero-sec {
@@ -209,7 +216,7 @@ body {
   padding-top: 60px;
   padding-bottom: 40px;
   width: 100%;
-  max-width: 1349px;
+  max-width: 1920px;
   background-color: white;
 }
 
@@ -219,15 +226,14 @@ body {
 }
 
 .about-me-002 {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   display: flex;
 }
 
 .my-picture {
   width: 450px;
   height: 450px;
-  margin: 0 auto;
+  margin-left: auto;
 }
 
 .my-picture > img {
@@ -239,7 +245,7 @@ body {
 .about-me-text {
   width: 50%;
   text-align: left;
-  margin: 0 32px;
+  margin: 0 auto;
 }
 
 @media (max-width: 712px) {
@@ -260,10 +266,33 @@ body {
   }
 }
 
+@media (max-width: 320px) {
+  .section-title {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .about-me-002 {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .about-me-text {
+    width: 90%;
+    margin: 8px auto;
+  }
+
+  .my-picture {
+    width: 320px;
+    height: 320px;
+  }
+}
+
 #Skills {
   padding-top: 60px;
   width: 100%;
-  max-width: 1349px;
+  max-width: 1920px;
 }
 
 @media (max-width: 712px) {
@@ -295,16 +324,31 @@ body {
   margin-left: 8px;
 }
 
+@media (max-width: 320px) {
+  #Skills {
+    left: 0;
+  }
+  .skill-grid-container {
+    display: grid;
+    grid-template-columns: 320px;
+    grid-gap: 10px;
+    left: 0;
+  }
+
+  .skillbar {
+  }
+}
+
 #MyWork {
   padding-top: 60px;
-  margin-left: 32px;
-  margin-right: 32px;
+  margin: auto;
 }
 
 .project-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
   grid-gap: 1rem;
+  justify-content: center;
 }
 
 .project-thumb {
@@ -353,6 +397,66 @@ body {
   font-size: 14px;
 }
 
+@media (max-width: 320px) {
+  #MyWork {
+    padding-top: 60px;
+    margin: 0 auto;
+  }
+
+  .project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    justify-content: center;
+  }
+
+  .project-thumb {
+    width: 100%;
+    max-width: 320px;
+    background-color: white;
+  }
+
+  .project-image {
+    width: 320px;
+  }
+
+  .project-image-002 > img {
+    width: 100%;
+  }
+
+  .project-image-002 > img:hover {
+    opacity: 0.6;
+    transition: 0.5s ease;
+  }
+
+  .project-name {
+    text-align: left;
+    font-weight: bold;
+    margin: 8px 16px;
+    color: black;
+    padding-top: 8px;
+    padding-bottom: 18px;
+  }
+
+  .project-name-002 {
+    color: black;
+    text-decoration: none;
+  }
+
+  .project-name-002:hover {
+    color: darkred;
+  }
+
+  .project-title {
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .project-subtitle {
+    font-size: 14px;
+  }
+}
+
 #Contact {
   margin-top: 60px;
   padding-top: 30px;
@@ -380,7 +484,6 @@ body {
   padding: 8px 16px;
   font-size: 18px;
   font-family: Roboto;
-  font-weight: bold;
   background-color: transparent;
   margin: 4px;
   border: none;
@@ -392,12 +495,12 @@ body {
   color: white;
   align-items: center;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .contact-button-2:hover {
   color: #fff;
-  text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #00ffff, 0 0 2px #00ffff,
-    0 0 3px #00ffff;
+  opacity: 0.5;
 }
 
 @media (max-width: 505px) {
@@ -418,4 +521,10 @@ body {
   width: 100%;
   border-top: solid 1px;
   padding-top: 1rem;
+}
+
+@media (max-width: 320px) {
+  .contact-header {
+    font-size: 16px;
+  }
 }

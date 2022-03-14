@@ -284,7 +284,7 @@ body {
   }
 
   .my-picture {
-    width: 320px;
+    width: 100%;
     height: 320px;
   }
 }
@@ -295,7 +295,7 @@ body {
   max-width: 1920px;
 }
 
-@media (max-width: 712px) {
+@media (max-width: 1024px) {
   #Skills {
     margin: 0 auto;
   }
@@ -326,39 +326,40 @@ body {
 
 @media (max-width: 320px) {
   #Skills {
-    left: 0;
+    width: 100%;
+    max-width: 320px;
   }
   .skill-grid-container {
     display: grid;
-    grid-template-columns: 320px;
-    grid-gap: 10px;
-    left: 0;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 0;
+    margin: 0;
   }
 
-  .skillbar {
+  .skill-name {
+    font-size: 14px;
   }
 }
 
 #MyWork {
   padding-top: 60px;
-  margin: auto;
 }
 
 .project-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 1rem;
   justify-content: center;
 }
 
 .project-thumb {
   width: 100%;
-  max-width: 375px;
+
   background-color: white;
 }
 
 .project-image {
-  width: 375px;
+  width: 100%;
 }
 
 .project-image-002 > img {

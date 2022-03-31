@@ -350,6 +350,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 1rem;
   justify-content: center;
+  margin: 32px;
 }
 
 .project-thumb {
@@ -409,7 +410,6 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 1rem;
     justify-content: center;
-    margin: 32px;
   }
 
   .project-thumb {

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" type="text/css" href="index.css" />
     <script src="/SideMenu.js"></script>
+    <script src="/LanguageSelect.js"></script>
     <title>アルテアガジョセフ</title>
   </head>
   <body>
@@ -24,9 +25,27 @@
         <div class="link-container">
           <a href="#Contact">Contact</a>
         </div>
+        <div class="link-container">
+          <select class="language-select">
+            <option
+              class="lang-option"
+              value="eng"
+              onclick="selectLanguage('English')"
+              >ENG</option
+            >
+            <option
+              class="lang-option"
+              value="jpn"
+              onclick="selectLanguage('Japanese')"
+              >日本語</option
+            >
+          </select>
+        </div>
       </div>
       <div class="side-menu">
-        <button onclick="openSide()" id="SideMenuBtn"><i class="fas fa-bars"></i></button>
+        <button onclick="openSide()" id="SideMenuBtn">
+          <i class="fas fa-bars"></i>
+        </button>
         <div id="MySideMenu">
           <div class="close-side-menu">
             <button onclick="closeSide()"><i class="fa fa-times"></i></button>
@@ -44,6 +63,22 @@
             <div class="side-link-container">
               <a href="#Contact">Contact</a>
             </div>
+            <div class="side-link-container">
+              <select class="language-select">
+                <option
+                  class="lang-option"
+                  value="eng"
+                  onclick="selectLanguage('English')"
+                  >ENG</option
+                >
+                <option
+                  class="lang-option"
+                  value="jpn"
+                  onclick="selectLanguage('Japanese')"
+                  >日本語</option
+                >
+              </select>
+            </div>
           </div>
         </div>
       </div>
@@ -53,33 +88,47 @@
         <div class="hero-background">
           <img src="images/PortHero001.jpg" />
           <div class="hero-text">
-            <h1>初めまして。アルテアガジョセフです。</h1>
-            <h2>WEBデザイナーやWEB開発の職業を希望しています。</h2>
+            <h1 id="welcome1">Hello, my name is Joseph Arteaga</h1>
+            <h2 id="welcome2">
+              I am currently aspiring to be a web developer and web designer in
+              Japan.
+            </h2>
           </div>
         </div>
       </div>
     </div>
     <section id="AboutMe">
       <div class="section-title">
-        <h2>私について</h2>
+        <h2 id="AboutMeH2">About Me</h2>
       </div>
       <div class="about-me-002">
         <div class="my-picture">
           <img src="images/joe-arteaga-profile-pic.jpeg" />
         </div>
         <div class="about-me-text">
-          <p>
-            初めまして。私はアルテアガジョセフです。アメリカ合衆国のカリフォルニア州のロサンゼルス出身です。2016年以来、日本に住んでいます。今まで英語教師の経験が沢山ありますが、現在はWEBデザインやWEB開発の職業を希望しています。ワークシートやパワーポイントプレゼンテーションなどをよくデザインする経験があります。それに描くことが大好きで、暇な時にプログラミング言語や描き方などの練習します。ウェブサイトやアプリなどを造るためにこの能力を使用すると思います。
-            <br />
-            <br />
-            以外には日本の文化や撮影や料理や外国語の興味を持っています。英語も日本語も話せます。日本語能力試験のN2を合格しました。
+          <p id="paragraph1">
+            I am originally from Los Angeles California in the United States. I
+            have been living in Japan since 2016. While I mostly have a
+            background as an English teacher, I am currently aspiring to build a
+            career in either web design and/or web development. I have had
+            experiences designing worksheets and powerpoint presentations. I
+            also love to draw and spend my spare time either studying a
+            programming language or honing in on my drawing skills. I believe
+            that I can use these skills to design websites, apps, and other
+            things that can potentially make peoples' live easier.
+          </p>
+          <p id="paragraph2">
+            Apart from that, I am also fascinated with Japanese culture,
+            photography, cooking, and other foreign languages. I speak both
+            English and Japanese, and have passed level N2 of the Japanese
+            Language Proficiency Test.
           </p>
         </div>
       </div>
     </section>
     <section id="Skills">
       <div class="section-title">
-        <h2>スキル</h2>
+        <h2 id="skillsH2">Skills</h2>
       </div>
       <div class="skill-grid-container">
         <div class="skillbar">
@@ -134,30 +183,30 @@
     </section>
     <section id="MyWork">
       <div class="section-title">
-        <h2>プロジェクト</h2>
+        <h2 id="workH2">My Work</h2>
       </div>
       <div class="project-container">
         <div class="project-thumb">
-              <div class="project-image">
-                <a
-                  href="https://codesandbox.io/s/todolist-vuejs-m35v96?file=/src/App.vue"
-                  class="project-image-002"
-                >
-                  <img src="images/todo-list-vue-js.jpg" />
-                </a>
+          <div class="project-image">
+            <a
+              href="https://codesandbox.io/s/todolist-vuejs-m35v96?file=/src/App.vue"
+              class="project-image-002"
+            >
+              <img src="images/todo-list-vue-js.jpg" />
+            </a>
+          </div>
+          <div class="project-name">
+            <a
+              href="https://codesandbox.io/s/todolist-vuejs-m35v96?file=/src/App.vue"
+              class="project-name-002"
+            >
+              <div class="project-title">アニメ名言ジェネレーター（英）</div>
+              <div class="project-subtitle">
+                React.jsとAPIを使用して、アニメ名言ジェネレーターを開発
               </div>
-              <div class="project-name">
-                <a
-                  href="https://codesandbox.io/s/todolist-vuejs-m35v96?file=/src/App.vue"
-                  class="project-name-002"
-                >
-                  <div class="project-title">To Do List（英）</div>
-                  <div class="project-subtitle">
-                    Vue.jsを使用して、やることリストを開発
-                  </div>
-                </a>
-              </div>
-            </div>
+            </a>
+          </div>
+        </div>
         <div class="project-thumb">
           <div class="project-image">
             <a
@@ -288,7 +337,7 @@
     </section>
     <section id="Contact">
       <div class="contact-header">
-        <h2>一緒に働きましょう！</h2>
+        <h2 id="contactH2">Let's work together!</h2>
       </div>
       <div class="contact-container">
         <button class="contact-button">
